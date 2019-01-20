@@ -2,9 +2,8 @@ const Web3 = require('web3');
 const { 
     NETWORK_URL, 
     PRIVATE_KEY,
-    ERC20_ADDRESS,
-    ERC20_ABI
 } = require('./credentials')
+const { ERC20_ADDRESS, ERC20_ABI } = require('./contractInfo')
 
 const web3 = new Web3(new Web3.providers.HttpProvider(NETWORK_URL));
 
